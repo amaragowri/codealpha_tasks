@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Language Learning App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Language Learning App</h1>
+
+  <!-- Category -->
+  <select id="category">
+    <option value="vocab">Vocabulary</option>
+    <option value="phrases">Phrases</option>
+  </select>
+
+  <!-- Flashcard -->
+  <div class="card">
+    <h2 id="word">Word</h2>
+    <h3 id="translation" class="hidden">Translation</h3>
+    <button onclick="showTranslation()">Show Translation</button>
+  </div>
+
+  <!-- Navigation -->
+  <div>
+    <button onclick="prevCard()">Previous</button>
+    <button onclick="nextCard()">Next</button>
+  </div>
+
+  <!-- Quiz -->
+  <div class="quiz">
+    <h2 id="quizQuestion"></h2>
+    <input type="text" id="quizAnswer" placeholder="Type answer">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="result"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
